@@ -108,19 +108,19 @@
 <h3>
 <a id="additional-work" class="anchor" href="#additional-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional Work</h3>
 
-<p>As we were researching, I found another dendrogram plot that looked cool and decided to test it. Changing the original code from
-''' R
-fit &lt;- hclust(d=d, method="ward.D")<br>
-plot(fit)
--&gt;
-'''
-to
-''' R
-hcd = as.dendrogram(fit)
-plot(hcd, type = "triangle")
--&gt;
-'''
-plots the branches of the dendrogram in a triangle shape. I really enjoyed working on this project and trying something new.</p>
+<p>As we were researching, I found another dendrogram plot that looked cool and decided to test it. Changing the original code from</p>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-smi">fit</span> <span class="pl-k">&lt;-</span> hclust(<span class="pl-v">d</span><span class="pl-k">=</span><span class="pl-smi">d</span>, <span class="pl-v">method</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>ward.D<span class="pl-pds">"</span></span>)   
+plot(<span class="pl-smi">fit</span>)
+<span class="pl-k">-</span><span class="pl-k">&gt;</span></pre></div>
+
+<p>to</p>
+
+<div class="highlight highlight-source-r"><pre><span class="pl-v">hcd</span> <span class="pl-k">=</span> as.dendrogram(<span class="pl-smi">fit</span>)
+plot(<span class="pl-smi">hcd</span>, <span class="pl-v">type</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>triangle<span class="pl-pds">"</span></span>)
+<span class="pl-k">-</span><span class="pl-k">&gt;</span></pre></div>
+
+<p>plots the branches of the dendrogram in a triangle shape. I really enjoyed working on this project and trying something new.</p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
