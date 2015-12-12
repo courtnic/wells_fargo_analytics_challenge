@@ -3,50 +3,32 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
     <title>Wells Fargo Analytics Challenge by courtnic</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/courtnic/wells_fargo_analytics_challenge">View on GitHub</a>
-    <div class="shell">
+    <header>
+      <div class="inner">
+        <h1>Wells Fargo Analytics Challenge</h1>
+        <h2></h2>
+        <a href="https://github.com/courtnic/wells_fargo_analytics_challenge" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Wells Fargo Analytics Challenge</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/courtnic/wells_fargo_analytics_challenge/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/courtnic/wells_fargo_analytics_challenge/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <h3>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
 <a id="financial-topics-discussed-on-social-media-and-cause-of-topics" class="anchor" href="#financial-topics-discussed-on-social-media-and-cause-of-topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Financial Topics Discussed On Social Media and Cause of Topics</h3>
 
 <p>Initially, the social media dataset was cleaned by removing punctuation, uppercase, </p>
@@ -130,11 +112,13 @@
 '''R
 fit &lt;- hclust(d=d, method="ward.D")<br>
 plot(fit)
+-&gt;
 '''
 to
 '''R
 hcd = as.dendrogram(fit)
 plot(hcd, type = "triangle")
+-&gt;
 '''
 plots the branches of the dendrogram in a triangle shape. I really enjoyed working on this project and trying something new.</p>
 
@@ -142,22 +126,25 @@ plots the branches of the dendrogram in a triangle shape. I really enjoyed worki
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>Samantha Quigley, Sonia Kopel, and Kendall Dunn also contributed to this project.</p>
-      </section>
+        </section>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/courtnic">courtnic</a> can be found on <a href="https://github.com/courtnic/wells_fargo_analytics_challenge">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+        <aside id="sidebar">
+          <a href="https://github.com/courtnic/wells_fargo_analytics_challenge/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/courtnic/wells_fargo_analytics_challenge/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
 
+          <p class="repo-owner"><a href="https://github.com/courtnic/wells_fargo_analytics_challenge"></a> is maintained by <a href="https://github.com/courtnic">courtnic</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    
+  
   </body>
 </html>
