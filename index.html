@@ -109,13 +109,13 @@
 <a id="additional-work" class="anchor" href="#additional-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional Work</h3>
 
 <p>As we were researching, I found another dendrogram plot that looked cool and decided to test it. Changing the original code from
-'''R
+''' R
 fit &lt;- hclust(d=d, method="ward.D")<br>
 plot(fit)
 -&gt;
 '''
 to
-'''R
+''' R
 hcd = as.dendrogram(fit)
 plot(hcd, type = "triangle")
 -&gt;
